@@ -31,15 +31,28 @@
 </head>
 
 <body class="font-sans antialiased">
-    @include('layouts.header')
-    @include('layouts.navigation')
-
     <!-- Page Content -->
-    <main id="main" class="main">
-        {{ $slot }}
+    <main>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <h3>Posts</h3>
+                </div>
+            </div>
+            @isset($posts)
+            @foreach ($posts as $post)
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ $post->subject }}</h5>
+                    <p><small><b>Author:</b> {{ $post->user->name }}</small></p>
+                    {{ $post->post }}
+                    <p class="border-top mt-4 font-monospace">For your feedback you can email the author on <a href="mailto:{{ $post->user->email }}">{{ $post->user->email }}</a></p>
+                </div>
+            </div>
+            @endforeach
+            @endisset
+        </div>
     </main>
-
-    @include('layouts.footer')
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
