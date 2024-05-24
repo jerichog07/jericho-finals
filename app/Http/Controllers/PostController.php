@@ -93,4 +93,10 @@ class PostController extends Controller
         $posts = Post::where('status', 1)->get();
         return view('pages.index', ['posts' => $posts]);
     }
+
+    public function allposts()
+    {
+        $posts = Post::where('status', 1)->get();
+        return view('resources.post.allposts', ['allposts' => $posts]);
+    }
 }
