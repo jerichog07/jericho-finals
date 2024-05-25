@@ -54,7 +54,6 @@
                                         <button type="button" class="btn btn-danger m-1" data-bs-toggle="modal" data-bs-target="#modalDelete{{ $post->id }}">
                                             <i class="bi bi-trash-fill"></i>
                                         </button>
-
                                     </td>
                                 </tr>
                                 @endforeach
