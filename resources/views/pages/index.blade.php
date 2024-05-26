@@ -38,12 +38,6 @@
                 <div class="col-12 mb-4">
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <h4>Posts</h4>
-                        <div class="container-fluid justify-content-end">
-                            <div>
-                                <a href="{{ route('login') }}" class="btn btn-outline-primary">Login</a>
-                                <a href="{{ route('register') }}" class="btn btn-outline-primary">Sign Up</a>
-                            </div>
-                        </div>
                     </nav>
                 </div>
             </div>
