@@ -16,7 +16,7 @@
     <div class="card">
         <div class="card-body">
             <div class="row">
-                <!-- Sales Card -->
+
                 <hr>
                 <div class="col-xxl-4 col-md-4">
                     <div class="card info-card sales-card">
@@ -54,9 +54,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- End Revenue Card -->
 
-                <!-- Customers Card -->
                 <div class="col-xxl-4 col-xl-4">
                     <div class="card info-card customers-card">
                         <div class="card-body">

@@ -16,11 +16,7 @@
                     </a>
                 </li>
 
-                <li>
-                    <a class="nav-link {{ Request::is('posts') ? 'active' : 'bg-white' }}" href="{{ route('post.allposts') }}">
-                        <i class="bi bi-circle"></i><span>All Posts</span>
-                    </a>
-                </li>
+
             </ul>
         </li>
     </ul>

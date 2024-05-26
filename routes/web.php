@@ -39,7 +39,6 @@ Route::middleware('auth', 'verified')->group(function () {
     // Route::delete('/post/{post}', [PostController::class, 'destroy'])->name('post.destroy');
 
     Route::resource('post', PostController::class);
-    Route::get('/allposts', [PostController::class, 'allposts'])->name('post.allposts');
 });
 
 require __DIR__ . '/auth.php';
